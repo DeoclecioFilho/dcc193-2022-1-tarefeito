@@ -1,11 +1,14 @@
+package br.dcc.ufjf.deocleciofilho.tarefeito;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 @Entity
 public class Tarefa  {
     @Id
     @GeneratedValue(strategy = 
-    GeneratedType.TABLE)
+    GenerationType.TABLE)
     private Long id;
     private String titulo;
 
