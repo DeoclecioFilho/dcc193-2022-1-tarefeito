@@ -11,17 +11,34 @@ public class Tarefa  {
     GenerationType.TABLE)
     private Long id;
     private String titulo;
+    private Integer tomatos;
 
-    public Tarefa(Long id, String titulo) {
+
+
+    
+    public Tarefa(Long id, String titulo, Integer tomatos) {
         this.id = id;
         this.titulo = titulo;
+        this.tomatos = tomatos;
     }
 
-    public Tarefa(String titulo){
-        this(null, titulo);
+
+    public Integer getTomatos() {
+        return tomatos;
     }
+
+
+    public void setTomatos(Integer tomatos) {
+        this.tomatos = tomatos;
+    }
+
+
+    public Tarefa(String titulo){
+        this(null, titulo, null);
+    }
+
     public Tarefa(){
-        this(null, null);
+        this(null, null, null);
     }
 
     public Long getId() {
