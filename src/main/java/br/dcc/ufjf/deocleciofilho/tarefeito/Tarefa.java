@@ -13,9 +13,6 @@ public class Tarefa  {
     private String titulo;
     private Integer tomatos;
 
-
-
-    
     public Tarefa(Long id, String titulo, Integer tomatos) {
         this.id = id;
         this.titulo = titulo;
@@ -34,11 +31,11 @@ public class Tarefa  {
 
 
     public Tarefa(String titulo){
-        this(null, titulo, null);
+        this(null, titulo, 0);
     }
 
     public Tarefa(){
-        this(null, null, null);
+        this(null, null, 0);
     }
 
     public Long getId() {
@@ -57,10 +54,13 @@ public class Tarefa  {
         this.titulo = titulo;
     }
 
+
     @Override
     public String toString() {
-        return "Tarefa [id=" + id + ", titulo=" + titulo + "]";
+        return "Tarefa [id=" + id + ", titulo=" + titulo + ", tomatos=" + tomatos + "]";
     }
+
+
 
 
 
