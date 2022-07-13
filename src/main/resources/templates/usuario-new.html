@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns:th="http://www.thymeleaf.org"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+</head>
+<body>
+    <h1>Cadastra Usuário</h1>
+    <form th:action="@{nova.html}" method="post">
+        <div>
+            <label for="titulo">Nome</label>
+            <input type="text" name="titulo" id="titulo" th:value="${usuario.nome}">
+        </div>
+        <div>
+            <label for="Password">Senha</label> 
+            <input type="password" name="Password" id = "password" th:field="${usuario.password}">
+
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+
+    </form>
+
+</body>
+</html>
