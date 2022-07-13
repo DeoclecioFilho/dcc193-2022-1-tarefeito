@@ -40,6 +40,7 @@ public class TarefaController {
     public ModelAndView index() {
         ModelAndView mv =new ModelAndView("tarefa-index");
         mv.addObject("mensagem", "Ola Mundo!");
+       // int i = 1/0;
         return mv;
     }
 
